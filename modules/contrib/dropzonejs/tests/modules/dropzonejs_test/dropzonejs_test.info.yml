@@ -1,0 +1,14 @@
+name: 'DropzoneJs Test'
+type: module
+description: 'Support module for DropzoneJs tests.'
+package: Testing
+# version: VERSION
+# core: 8.x
+dependencies:
+ - dropzonejs
+
+# Information added by Drupal.org packaging script on 2016-12-23
+version: '8.x-1.0-alpha3+7-dev'
+core: '8.x'
+project: 'dropzonejs'
+datestamp: 1482526984

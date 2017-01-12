@@ -1,0 +1,43 @@
+google_tag.settings:
+  type: config_object
+  mapping:
+    container_id:
+      type: string
+      label: 'Container ID'
+    path_toggle:
+      type: string
+      label: 'Add snippet on specific paths'
+    path_list:
+      type: string
+      label: 'Listed paths'
+    role_toggle:
+      type: string
+      label: 'Add snippet for specific roles'
+    role_list:
+      type: sequence
+      label: 'Selected roles'
+      sequence:
+        type: string
+        label: 'Role'
+    status_toggle:
+      type: string
+      label: 'Add snippet for specific statuses'
+    status_list:
+      type: string
+      label: 'Listed statuses'
+    compact_snippet:
+      type: boolean
+      label: 'Compact the JavaScript snippet'
+    include_file:
+      type: boolean
+      label: 'Include the snippet as a file'
+    data_layer:
+      type: string
+      label: 'Data layer'
+    whitelist_classes:
+      type: string
+      label: 'White-listed classes'
+    blacklist_classes:
+      type: string
+      label: 'Black-listed classes'
+
