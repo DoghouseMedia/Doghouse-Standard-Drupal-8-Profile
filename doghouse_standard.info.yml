@@ -84,6 +84,9 @@ dependencies:
   - slick_media
   - entity_embed
   - media
+  - field_group
+  - context
+  - context_ui
 themes:
   - bartik
   - seven

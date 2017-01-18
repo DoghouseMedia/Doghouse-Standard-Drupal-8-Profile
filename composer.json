@@ -1,0 +1,53 @@
+{
+  "name": "doghouse/doghouse-standard-profile",
+  "description": "Doughouse standard profile",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Lemuel Vellez",
+      "role": "Web Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal-composer/drupal-scaffold": "^2.2",
+    "drupal/admin_toolbar": "1.18.0",
+    "drupal/google_tag": "1.x-dev",
+    "drupal/google_analytics": "^2.1",
+    "drupal/webform": "^5.0@beta",
+    "drupal/context": "^1.0@alpha",
+    "drupal/features": "^3.2",
+    "drupal/paragraphs": "^1.0",
+    "drupal/page_manager": "^1.0@alpha",
+    "drupal/panels": "^3.0@beta",
+    "drupal/token": "^1.0@RC",
+    "drupal/pathauto": "^1.0@beta",
+    "drupal/xmlsitemap": "^1.0@alpha",
+    "drupal/metatag": "^1.0@beta",
+    "drupal/redirect": "^1.0@alpha",
+    "drupal/config_readonly": "^1.0@beta",
+    "drupal/media": "1.x-dev",
+    "drupal/panels_ipe": "^3.0@beta",
+    "drupal/config_update": "^1.2",
+    "drupal/field_group": "^1.0@RC"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "libraries/{$name}": ["type:drupal-library"],
+      "modules/contrib/{$name}": ["type:drupal-module"],
+      "themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  }
+}

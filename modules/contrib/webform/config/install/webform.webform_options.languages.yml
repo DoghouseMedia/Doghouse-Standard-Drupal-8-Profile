@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  enforced:
-    module:
-      - webform
-id: languages
-label: Languages
-options: ''
