@@ -1,8 +1,6 @@
 name: Doghouse Standard
 type: profile
 core: 8.x
-distribution:
-  name: Doghouse Standard Profile.
 
 # Required modules.
 dependencies:
@@ -87,6 +85,8 @@ dependencies:
   - field_group
   - context
   - context_ui
+  - panelizer
+  - panelizer_quickedit
 themes:
   - bartik
   - seven

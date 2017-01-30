@@ -16,16 +16,18 @@
     }
   ],
   "require": {
+    "cweagans/composer-patches": "~1.0",
+    "drupal/dropzonejs": "1.0.0-alpha3",
     "composer/installers": "^1.2",
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/admin_toolbar": "1.18.0",
     "drupal/google_tag": "1.x-dev",
     "drupal/google_analytics": "^2.1",
     "drupal/webform": "^5.0@beta",
-    "drupal/context": "^1.0@alpha",
+    "drupal/context": "1.x-dev",
     "drupal/features": "^3.2",
     "drupal/paragraphs": "^1.0",
-    "drupal/page_manager": "^1.0@alpha",
+    "drupal/page_manager": "1.x-dev",
     "drupal/panels": "^3.0@beta",
     "drupal/token": "^1.0@RC",
     "drupal/pathauto": "^1.0@beta",
@@ -36,18 +38,46 @@
     "drupal/media": "1.x-dev",
     "drupal/panels_ipe": "^3.0@beta",
     "drupal/config_update": "^1.2",
-    "drupal/field_group": "^1.0@RC"
+    "drupal/field_group": "^1.0@RC",
+    "drupal/panelizer": "3.0.0-alpha3"
   },
   "conflict": {
     "drupal/drupal": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "autoload": {
+    "classmap": [
+      "scripts/composer/CleanProfile.php"
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "DoghouseProfile\\composer\\CleanProfile::deleteCoreFiles"
+    ],
+    "post-update-cmd": [
+      "DoghouseProfile\\composer\\CleanProfile::deleteCoreFiles"
+    ]
+  },
   "extra": {
     "installer-paths": {
       "libraries/{$name}": ["type:drupal-library"],
       "modules/contrib/{$name}": ["type:drupal-module"],
       "themes/contrib/{$name}": ["type:drupal-theme"]
+    },
+    "patches": {
+      "drupal/dropzonejs": {
+        "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
+      },
+      "drupal/context": {
+        "Fix to place site branding block in context": "https://www.drupal.org/files/issues/2714917_fix_site_branding.patch"
+      },
+      "drupal/entity_browser": {
+        "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
+      },
+      "drupal/panels": {
+        "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
+      }
     }
   }
 }
