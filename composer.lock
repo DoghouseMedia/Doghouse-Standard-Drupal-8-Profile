@@ -3000,7 +3000,8 @@
                     "datestamp": "1475335394"
                 },
                 "patches_applied": {
-                    "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
+                    "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch",
+                    "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
