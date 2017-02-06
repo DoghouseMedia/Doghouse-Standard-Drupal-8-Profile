@@ -76,7 +76,8 @@
         "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
       },
       "drupal/panels": {
-        "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
+        "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch",
+        "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch"
       }
     }
   }
