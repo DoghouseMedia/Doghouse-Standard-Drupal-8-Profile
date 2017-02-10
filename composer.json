@@ -77,7 +77,8 @@
       },
       "drupal/panels": {
         "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch",
-        "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch"
+        "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch",
+        "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch"
       }
     }
   }
