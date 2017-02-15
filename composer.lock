@@ -3241,17 +3241,17 @@
         },
         {
             "name": "drupal/redirect",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/redirect",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha3.zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha4.zip",
                 "reference": null,
-                "shasum": "9e27696fdb8a4992694151fdde5588cfac28c789"
+                "shasum": "883401f9983a00ac23bfda9830bf6b77d53209ad"
             },
             "require": {
                 "drupal/core": "~8"
@@ -3262,8 +3262,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1486078383"
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1487092684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3288,17 +3288,17 @@
         },
         {
             "name": "drupal/slick",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/slick",
-                "reference": "8.x-1.0-rc1"
+                "reference": "8.x-1.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc1.zip",
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc2.zip",
                 "reference": null,
-                "shasum": "5213ea54f562de155a4bc0f196fd024e051d3b75"
+                "shasum": "b649cb01b5238097f8da5fcecc9a599c9be0b11d"
             },
             "require": {
                 "drupal/blazy": "~1.0",
@@ -3310,8 +3310,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1485194284"
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1486728784"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3551,17 +3551,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta5",
+            "version": "5.0.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta5"
+                "reference": "8.x-5.0-beta6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta5.zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta6.zip",
                 "reference": null,
-                "shasum": "91cd6651923310974fa01aa12b9811c7811e3969"
+                "shasum": "23783469f03bd0fd183245c5862f57b737d9946e"
             },
             "require": {
                 "drupal/core": "*"
@@ -3575,8 +3575,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta5",
-                    "datestamp": "1485776283"
+                    "version": "8.x-5.0-beta6",
+                    "datestamp": "1487025483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
