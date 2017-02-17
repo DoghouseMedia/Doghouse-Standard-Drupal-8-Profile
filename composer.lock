@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e01313123e4a77ec3e3dae0228c39f3",
+    "content-hash": "8601860f3534d2faf4fa351693607fe9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1427,7 +1427,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha3",
-                    "datestamp": "1478516039"
+                    "datestamp": "1487251383"
                 },
                 "patches_applied": {
                     "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
@@ -1488,7 +1488,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha3",
-                    "datestamp": "1478516039"
+                    "datestamp": "1487251383"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2819,7 +2819,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1485901983"
+                    "datestamp": "1485902197"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2868,6 +2868,9 @@
                 "drupal": {
                     "version": "8.x-1.0-alpha24+4-dev",
                     "datestamp": "1484752084"
+                },
+                "patches_applied": {
+                    "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3551,17 +3554,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta6",
+            "version": "5.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta6"
+                "reference": "8.x-5.0-beta7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta6.zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta7.zip",
                 "reference": null,
-                "shasum": "23783469f03bd0fd183245c5862f57b737d9946e"
+                "shasum": "1c2be66200291e38ebe41e27641e2607d4be7baa"
             },
             "require": {
                 "drupal/core": "*"
@@ -3575,8 +3578,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta6",
-                    "datestamp": "1487025483"
+                    "version": "8.x-5.0-beta7",
+                    "datestamp": "1487143684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
