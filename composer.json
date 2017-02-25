@@ -39,7 +39,8 @@
     "drupal/panels_ipe": "^3.0@beta",
     "drupal/config_update": "^1.2",
     "drupal/field_group": "^1.0@RC",
-    "drupal/panelizer": "3.0.0-alpha3"
+    "drupal/panelizer": "3.0.0-alpha3",
+    "drupal/views_block_filter_block": "1.x-dev"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -82,6 +83,9 @@
       },
       "drupal/page_manager": {
         "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
+      },
+      "drupal/views_block_filter_block": {
+        "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
       }
     }
   }
