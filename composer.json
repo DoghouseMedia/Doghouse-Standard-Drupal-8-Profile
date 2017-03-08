@@ -40,7 +40,8 @@
     "drupal/config_update": "^1.2",
     "drupal/field_group": "^1.0@RC",
     "drupal/panelizer": "3.0.0-alpha3",
-    "drupal/views_block_filter_block": "1.x-dev"
+    "drupal/views_block_filter_block": "1.x-dev",
+    "drupal/rabbit_hole": "^1.0@beta"
   },
   "conflict": {
     "drupal/drupal": "*"
