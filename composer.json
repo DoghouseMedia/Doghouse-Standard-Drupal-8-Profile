@@ -1,7 +1,7 @@
 {
   "name": "doghouse/doghouse-standard-profile",
   "description": "Doughouse standard profile",
-  "type": "project",
+  "type": "drupal-profile",
   "license": "GPL-2.0+",
   "authors": [
     {
