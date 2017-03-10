@@ -1,93 +1,83 @@
 {
-  "name": "doghouse/doghouse-standard-profile",
-  "description": "Doughouse standard profile",
-  "type": "drupal-profile",
-  "license": "GPL-2.0+",
-  "authors": [
-    {
-      "name": "Lemuel Vellez",
-      "role": "Web Developer"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
-  ],
-  "require": {
-    "cweagans/composer-patches": "~1.0",
-    "drupal/dropzonejs": "1.0.0-alpha3",
-    "composer/installers": "^1.2",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "drupal/admin_toolbar": "1.18.0",
-    "drupal/google_tag": "1.x-dev",
-    "drupal/google_analytics": "^2.1",
-    "drupal/webform": "^5.0@beta",
-    "drupal/context": "1.x-dev",
-    "drupal/features": "^3.2",
-    "drupal/paragraphs": "^1.0",
-    "drupal/page_manager": "1.x-dev",
-    "drupal/panels": "^3.0@beta",
-    "drupal/token": "^1.0@RC",
-    "drupal/pathauto": "^1.0@beta",
-    "drupal/xmlsitemap": "^1.0@alpha",
-    "drupal/metatag": "^1.0@beta",
-    "drupal/redirect": "^1.0@alpha",
-    "drupal/config_readonly": "^1.0@beta",
-    "drupal/media": "1.x-dev",
-    "drupal/panels_ipe": "^3.0@beta",
-    "drupal/config_update": "^1.2",
-    "drupal/field_group": "^1.0@RC",
-    "drupal/panelizer": "3.0.0-alpha3",
-    "drupal/views_block_filter_block": "1.x-dev",
-    "drupal/rabbit_hole": "^1.0@beta"
-  },
-  "conflict": {
-    "drupal/drupal": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "autoload": {
-    "classmap": [
-      "scripts/composer/CleanProfile.php"
-    ]
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "DoghouseProfile\\composer\\CleanProfile::deleteCoreFiles"
+    "name": "doghouse/doghouse-standard-profile",
+    "description": "Doghouse standard profile",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Doghouse Agency",
+            "role": "Developer"
+        }
     ],
-    "post-update-cmd": [
-      "DoghouseProfile\\composer\\CleanProfile::deleteCoreFiles"
-    ]
-  },
-  "extra": {
-    "installer-paths": {
-      "libraries/{$name}": ["type:drupal-library"],
-      "modules/contrib/{$name}": ["type:drupal-module"],
-      "themes/contrib/{$name}": ["type:drupal-theme"]
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/admin_toolbar": "1.18.0",
+        "drupal/config_readonly": "^1.0@beta",
+        "drupal/config_update": "^1.2",
+        "drupal/context": "1.x-dev",
+        "drupal/dropzonejs": "1.0.0-alpha3",
+        "drupal/features": "^3.2",
+        "drupal/field_group": "^1.0@RC",
+        "drupal/google_analytics": "^2.1",
+        "drupal/google_tag": "1.x-dev",
+        "drupal/media": "1.x-dev",
+        "drupal/metatag": "^1.0@beta",
+        "drupal/page_manager": "1.x-dev",
+        "drupal/panelizer": "3.0.0-alpha3",
+        "drupal/panels": "^3.0@beta",
+        "drupal/panels_ipe": "^3.0@beta",
+        "drupal/paragraphs": "^1.0",
+        "drupal/pathauto": "^1.0@beta",
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/redirect": "^1.0@alpha",
+        "drupal/token": "^1.0@RC",
+        "drupal/views_block_filter_block": "1.x-dev",
+        "drupal/webform": "^5.0@beta",
+        "drupal/xmlsitemap": "^1.0@alpha"
     },
-    "patches": {
-      "drupal/dropzonejs": {
-        "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
-      },
-      "drupal/context": {
-        "Fix to place site branding block in context": "https://www.drupal.org/files/issues/2714917_fix_site_branding.patch"
-      },
-      "drupal/entity_browser": {
-        "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
-      },
-      "drupal/panels": {
-        "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch",
-        "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch",
-        "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch"
-      },
-      "drupal/page_manager": {
-        "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
-      },
-      "drupal/views_block_filter_block": {
-        "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
-      }
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/context": {
+                "Fix to place site branding block in context": "https://www.drupal.org/files/issues/2714917_fix_site_branding.patch"
+            },
+            "drupal/dropzonejs": {
+                "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
+            },
+            "drupal/entity_browser": {
+                "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
+            },
+            "drupal/page_manager": {
+                "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
+            },
+            "drupal/panels": {
+                "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch",
+                "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch",
+                "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
+            },
+            "drupal/views_block_filter_block": {
+                "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
+            }
+        }
     }
-  }
 }

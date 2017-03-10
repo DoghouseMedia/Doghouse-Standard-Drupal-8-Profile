@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "655ef91a0beaf5e35b0167a616e39321",
+    "content-hash": "ae0ba59627d48a28138b0800983a4064",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3003,9 +3003,9 @@
                     "datestamp": "1488057783"
                 },
                 "patches_applied": {
-                    "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch",
+                    "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch",
                     "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch",
-                    "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch"
+                    "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3259,7 +3259,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta2",
                 "shasum": "0a5f2421560433fbd1c343af4f56556e8e775a4d"
             },
             "require": {
@@ -5967,22 +5967,22 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/google_tag": 20,
-        "drupal/webform": 10,
+        "drupal/config_readonly": 10,
         "drupal/context": 20,
+        "drupal/field_group": 5,
+        "drupal/google_tag": 20,
+        "drupal/media": 20,
+        "drupal/metatag": 10,
         "drupal/page_manager": 20,
         "drupal/panels": 10,
-        "drupal/token": 5,
-        "drupal/pathauto": 10,
-        "drupal/xmlsitemap": 15,
-        "drupal/metatag": 10,
-        "drupal/redirect": 15,
-        "drupal/config_readonly": 10,
-        "drupal/media": 20,
         "drupal/panels_ipe": 10,
-        "drupal/field_group": 5,
+        "drupal/pathauto": 10,
+        "drupal/rabbit_hole": 10,
+        "drupal/redirect": 15,
+        "drupal/token": 5,
         "drupal/views_block_filter_block": 20,
-        "drupal/rabbit_hole": 10
+        "drupal/webform": 10,
+        "drupal/xmlsitemap": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
