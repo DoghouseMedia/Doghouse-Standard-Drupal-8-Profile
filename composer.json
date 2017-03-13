@@ -58,9 +58,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
-            "drupal/context": {
-                "Fix to place site branding block in context": "https://www.drupal.org/files/issues/2714917_fix_site_branding.patch"
-            },
             "drupal/dropzonejs": {
                 "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
             },
@@ -71,9 +68,7 @@
                 "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
             },
             "drupal/panels": {
-                "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch",
-                "Fix cannot add site branding": "https://www.drupal.org/files/issues/panels-branding-block-2709521-9.patch",
-                "Fix max-age error": "https://www.drupal.org/files/issues/panels-max_age_issue-2828513-4.patch"
+                "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch"
             },
             "drupal/views_block_filter_block": {
                 "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
