@@ -31,7 +31,7 @@
         "drupal/media": "1.x-dev",
         "drupal/metatag": "^1.0@beta",
         "drupal/page_manager": "1.x-dev",
-        "drupal/panelizer": "3.0.0-alpha3",
+        "drupal/panelizer": "^3.0",
         "drupal/panels": "^3.0@beta",
         "drupal/panels_ipe": "^3.0@beta",
         "drupal/paragraphs": "^1.0",
