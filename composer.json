@@ -72,6 +72,9 @@
             },
             "drupal/views_block_filter_block": {
                 "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
+            },
+            "drupal/context": {
+                "Fix custom theme condition not working": "https://www.drupal.org/files/issues/context-current_theme_condition_not_working-2860900-3.patch"
             }
         }
     }
