@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a417fd17000883c7925b85cd7161279",
+    "content-hash": "fd6d4c21ad185e247f8f40453a5099e7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -726,7 +726,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.18",
-                    "datestamp": "1480614184"
+                    "datestamp": "1491487683"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -933,7 +933,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/context",
-                "reference": "1878b47644490f6c683cf92067c7eda9564a0096"
+                "reference": "29f185f3ebdb046243484e40e33e7e7e3d3eb27d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -944,8 +944,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1+8-dev",
-                    "datestamp": "1489144083"
+                    "version": "8.x-1.0-alpha1+11-dev",
+                    "datestamp": "1490378582"
+                },
+                "patches_applied": {
+                    "Fix custom theme condition not working": "https://www.drupal.org/files/issues/context-current_theme_condition_not_working-2860900-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1012,14 +1015,21 @@
                     "homepage": "https://www.drupal.org/user/264833"
                 }
             ],
-            "description": "Set conditions and configure reactions that should be implemented when conditions pass.",
+            "description": "Manage contextual conditions and reactions for different portions of your site.",
             "homepage": "https://github.com/oddhill/context",
+            "keywords": [
+                "Drupal",
+                "block",
+                "conditions",
+                "context",
+                "visibility"
+            ],
             "support": {
                 "source": "https://github.com/oddhill/context",
                 "issues": "https://github.com/oddhill/context/issues",
                 "docs": "https://github.com/oddhill/context"
             },
-            "time": "2017-03-10 11:09:09"
+            "time": "2017-03-31 15:57:41"
         },
         {
             "name": "drupal/core",
@@ -1225,7 +1235,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1468356239"
+                    "datestamp": "1490287983"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1277,7 +1287,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha27",
-                    "datestamp": "1471723439"
+                    "datestamp": "1490677984"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1346,7 +1356,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha27",
-                    "datestamp": "1471723439"
+                    "datestamp": "1490677984"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1556,7 +1566,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1468176563"
+                    "datestamp": "1490755685"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1684,7 +1694,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1487581984"
+                    "datestamp": "1487795881"
                 },
                 "patches_applied": {
                     "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
@@ -1750,7 +1760,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1487581984"
+                    "datestamp": "1487795881"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1869,7 +1879,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
-                "reference": "8.x-1.2",
+                "reference": null,
                 "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
@@ -1886,6 +1896,9 @@
                 "drupal": {
                     "version": "8.x-1.2",
                     "datestamp": "1485790085"
+                },
+                "patches_applied": {
+                    "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/dependency_on_rest-2862543-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2161,7 +2174,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1477080239"
+                    "datestamp": "1491393484"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2469,6 +2482,10 @@
                 {
                     "name": "Berdir",
                     "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
                     "name": "Drupal Media Team",
@@ -2855,7 +2872,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/page_manager",
-                "reference": "292cddfeca17bea8b95fbcad2ba09b534a913d03"
+                "reference": "be1d541ffeac5667d9a3ca4bfd115ad65277b1cd"
             },
             "require": {
                 "drupal/core": "^8.0.5",
@@ -2867,8 +2884,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha24+4-dev",
-                    "datestamp": "1484752084"
+                    "version": "8.x-1.0-alpha24+5-dev",
+                    "datestamp": "1491017585"
                 },
                 "patches_applied": {
                     "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
@@ -2904,7 +2921,7 @@
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-01-18 15:01:50"
+            "time": "2017-04-01 03:31:24"
         },
         {
             "name": "drupal/panelizer",
@@ -2917,7 +2934,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-3.0-beta1",
                 "shasum": "1a61865b5e8ad1b28b2dbcdb1bafc7caf02c1fa2"
             },
             "require": {
@@ -2933,7 +2950,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1486220583"
+                    "datestamp": "1491580982"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2964,6 +2981,10 @@
                 {
                     "name": "neclimdul",
                     "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
                 }
             ],
             "description": "Allow any entity view mode to be rendered using a Panels display.",
@@ -3275,7 +3296,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
-                    "datestamp": "1486311483"
+                    "datestamp": "1491779583"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3383,7 +3404,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1486728784"
+                    "datestamp": "1490295783"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3668,17 +3689,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta9",
+            "version": "5.0.0-beta11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta9"
+                "reference": "8.x-5.0-beta11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta9.zip",
-                "reference": "8.x-5.0-beta9",
-                "shasum": "cc1a31b22ae3daca5c2cc05ca729092a90f3835d"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta11.zip",
+                "reference": "8.x-5.0-beta11",
+                "shasum": "76030da33a7067429bb44278925d44ecd47b23da"
             },
             "require": {
                 "drupal/core": "*"
@@ -3689,8 +3710,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta9",
-                    "datestamp": "1488753784"
+                    "version": "8.x-5.0-beta11",
+                    "datestamp": "1491471183"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
