@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd6d4c21ad185e247f8f40453a5099e7",
+    "content-hash": "99000238747562f946bf17b5afb6f23e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1879,7 +1879,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
@@ -3712,6 +3712,9 @@
                 "drupal": {
                     "version": "8.x-5.0-beta11",
                     "datestamp": "1491471183"
+                },
+                "patches_applied": {
+                    "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/webform_link_manager-2867556-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

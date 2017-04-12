@@ -78,7 +78,11 @@
             },            
             "drupal/entity_reference_revisions": {
                 "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/dependency_on_rest-2862543-2.patch"
+            },
+            "drupal/webform": {
+                "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/webform_link_manager-2867556-6.patch"
             }
-        }
+        },
+        "enable-patching": true
     }
 }
