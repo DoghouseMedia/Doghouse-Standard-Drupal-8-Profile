@@ -23,6 +23,7 @@
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_update": "^1.2",
         "drupal/context": "1.x-dev",
+        "drupal/core": "^8.3",
         "drupal/dropzonejs": "1.0.0-alpha3",
         "drupal/features": "^3.2",
         "drupal/field_group": "^1.0@RC",
@@ -30,10 +31,9 @@
         "drupal/google_tag": "1.x-dev",
         "drupal/media": "1.x-dev",
         "drupal/metatag": "^1.0@beta",
-        "drupal/page_manager": "1.x-dev",
-        "drupal/panelizer": "^3.0",
-        "drupal/panels": "^3.0@beta",
-        "drupal/panels_ipe": "^3.0@beta",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panelizer": "^4.0",
+        "drupal/panels": "^4.1",
         "drupal/paragraphs": "^1.0",
         "drupal/pathauto": "^1.0@beta",
         "drupal/rabbit_hole": "^1.0@beta",
@@ -48,6 +48,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
     "extra": {
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
