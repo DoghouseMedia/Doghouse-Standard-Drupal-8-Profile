@@ -23,7 +23,7 @@
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_update": "^1.2",
         "drupal/context": "1.x-dev",
-        "drupal/core": "^8.3",
+        "drupal/core": "^8.4",
         "drupal/dropzonejs": "1.0.0-alpha3",
         "drupal/features": "^3.2",
         "drupal/field_group": "^1.0@RC",
