@@ -67,6 +67,7 @@ dependencies:
   - dropzonejs
   - entity
   - entity_browser
+  - media_entity_browser
   - inline_entity_form
   - embed
   - entity_embed
