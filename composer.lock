@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "99f3cf6d3adfe1a704fff6e2293a5245",
+    "content-hash": "653da2573e5a9260e2fba261470f3b59",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1058,11 +1058,17 @@
         },
         {
             "name": "drupal/context",
-            "version": "dev-1.x",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/context",
-                "reference": "200da2a82924602af3cc7d42d525218d33e2692c"
+                "reference": "8.x-4.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/context-8.x-4.0-beta2.zip",
+                "reference": "8.x-4.0-beta2",
+                "shasum": "e41bc912e1ec73bc4d08a3cf730dc2405a9213d3"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1070,14 +1076,14 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
+                    "version": "8.x-4.0-beta2",
                     "datestamp": "1505378944",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1158,8 +1164,7 @@
                 "source": "https://github.com/oddhill/context",
                 "issues": "https://github.com/oddhill/context/issues",
                 "docs": "https://github.com/oddhill/context"
-            },
-            "time": "2017-09-14 08:49:52"
+            }
         },
         {
             "name": "drupal/core",
@@ -1898,7 +1903,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1495814284",
+                    "datestamp": "1515143885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2160,7 +2165,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/google_tag"
             },
-            "time": "2017-06-16 21:53:17"
+            "time": "2017-06-16T21:53:17+00:00"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -2885,10 +2890,10 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1501443542",
+                    "datestamp": "1513767485",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3019,7 +3024,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1493466843",
+                    "datestamp": "1513810384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3091,7 +3096,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x",
-                    "datestamp": "1510132368",
+                    "datestamp": "1512694688",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3171,7 +3176,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_block_filter_block"
             },
-            "time": "2017-10-13 06:53:22"
+            "time": "2017-10-13T06:53:22+00:00"
         },
         {
             "name": "drupal/webform",
@@ -3197,7 +3202,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta24",
-                    "datestamp": "1510867685",
+                    "datestamp": "1513003985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5359,14 +5364,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/config_readonly": 10,
-        "drupal/context": 20,
+        "drupal/context": 10,
         "drupal/field_group": 5,
         "drupal/google_tag": 20,
         "drupal/page_manager": 10,
         "drupal/pathauto": 10,
         "drupal/rabbit_hole": 10,
-        "drupal/redirect": 15,
-        "drupal/styleguide": 15,
         "drupal/token": 5,
         "drupal/views_block_filter_block": 20,
         "drupal/webform": 10,
