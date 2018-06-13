@@ -25,7 +25,7 @@
         "drupal/config_update": "^1.2",
         "drupal/context": "^4.0@beta",
         "drupal/core": "8.5.*",
-        "drupal/dropzonejs": "1.0.0-alpha3",
+        "drupal/dropzonejs": "~2",
         "drupal/entity": "1.*",
         "drupal/entity_browser": "2.*",
         "drupal/entity_embed": "1.*",
