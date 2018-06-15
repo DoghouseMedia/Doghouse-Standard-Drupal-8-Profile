@@ -72,9 +72,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
-            "drupal/dropzonejs": {
-                "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
-            },
             "drupal/entity_browser": {
                 "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
             },
