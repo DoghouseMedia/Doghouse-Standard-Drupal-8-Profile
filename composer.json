@@ -8,7 +8,95 @@
             "name": "Doghouse Agency",
             "role": "Developer"
         }
+    ],{
+    "name": "doghouse/doghouse-standard-profile",
+    "description": "Doghouse standard profile",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Doghouse Agency",
+            "role": "Developer"
+        }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "~2.2",
+        "drupal/admin_toolbar": "1.18.0",
+        "drupal/config_readonly": "~1.0@beta",
+        "drupal/config_update": "~1.2",
+        "drupal/context": "1.x-dev",
+        "drupal/dropzonejs": "1.0.0-alpha3",
+        "drupal/features": "~3.2",
+        "drupal/field_group": "~1.0@RC",
+        "drupal/google_analytics": "~2.1",
+        "drupal/google_tag": "1.x-dev",
+        "drupal/media": "1.x-dev",
+        "drupal/metatag": "~1.0@beta",
+        "drupal/page_manager": "1.x-dev",
+        "drupal/panelizer": "~3.0",
+        "drupal/panels": "~3.0@beta",
+        "drupal/panels_ipe": "~3.0@beta",
+        "drupal/paragraphs": "~1.0",
+        "drupal/pathauto": "~1.0@beta",
+        "drupal/rabbit_hole": "~1.0@beta",
+        "drupal/redirect": "~1.0@alpha",
+        "drupal/token": "~1.0@RC",
+        "drupal/views_block_filter_block": "1.x-dev",
+        "drupal/webform": "~5.0@beta",
+        "drupal/xmlsitemap": "~1.0@alpha"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/dropzonejs": {
+                "Fix requirement to include libraries in installation profile": "https://www.drupal.org/files/issues/2830862-7.patch"
+            },
+            "drupal/entity_browser": {
+                "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
+            },
+            "drupal/page_manager": {
+                "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
+            },
+            "drupal/panels": {
+                "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/custom_attributes_in_panels_blocks-2849867-3.patch"
+            },
+            "drupal/views_block_filter_block": {
+                "Fix empty exposed forms appeared in each view": "https://www.drupal.org/files/issues/empty_exposed_forms-2790505-2.patch"
+            },
+            "drupal/context": {
+                "Fix custom theme condition not working": "https://www.drupal.org/files/issues/context-current_theme_condition_not_working-2860900-3.patch"
+            },            
+            "drupal/entity_reference_revisions": {
+                "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/dependency_on_rest-2862543-2.patch"
+            },
+            "drupal/webform": {
+                "Dependency on rest link_manager moved in 8.3": "https://www.drupal.org/files/issues/webform_link_manager-2867556-6.patch"
+            }
+        },
+        "enable-patching": true
+    }
+}
+
     "repositories": [
         {
             "type": "composer",
