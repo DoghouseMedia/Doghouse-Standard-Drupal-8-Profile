@@ -8,16 +8,6 @@
             "name": "Doghouse Agency",
             "role": "Developer"
         }
-    ],{
-    "name": "doghouse/doghouse-standard-profile",
-    "description": "Doghouse standard profile",
-    "type": "drupal-profile",
-    "license": "GPL-2.0+",
-    "authors": [
-        {
-            "name": "Doghouse Agency",
-            "role": "Developer"
-        }
     ],
     "repositories": [
         {
