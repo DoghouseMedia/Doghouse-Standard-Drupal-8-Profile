@@ -4,9 +4,9 @@ dependencies:
   module:
     - search
   theme:
-    - bartik
-id: bartik_search
-theme: bartik
+    - stark
+id: stark_search
+theme: stark
 region: sidebar_first
 weight: -1
 provider: null

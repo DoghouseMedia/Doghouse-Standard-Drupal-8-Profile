@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_branding
-theme: bartik
+    - stark
+id: stark_branding
+theme: stark
 region: header
 weight: 0
 provider: null

@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_powered
-theme: bartik
-region: footer_fifth
-weight: 10
+    - stark
+id: stark_powered
+theme: stark
+region: footer
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

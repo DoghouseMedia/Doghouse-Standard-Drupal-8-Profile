@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_account_menu
-theme: bartik
+    - stark
+id: stark_account_menu
+theme: stark
 region: secondary_menu
 weight: 0
 provider: null

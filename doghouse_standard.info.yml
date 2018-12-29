@@ -79,5 +79,5 @@ dependencies:
   - context_ui
   - panelizer
 themes:
-  - bartik
+  - stark
   - seven
