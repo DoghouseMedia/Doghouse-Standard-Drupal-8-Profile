@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.jumbotron
+    - field.storage.block_content.field_media
+    - media.type.image
+id: block_content.jumbotron.field_media
+field_name: field_media
+entity_type: block_content
+bundle: jumbotron
+label: Media
+description: 'The media to display as a background'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

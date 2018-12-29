@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+label: Jumbotron
+revision: 1
+description: 'A Jumbotron or Hero section generally features at the top of a page featuring large imagery.'
