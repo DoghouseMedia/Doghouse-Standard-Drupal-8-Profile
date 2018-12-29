@@ -50,6 +50,8 @@ dependencies:
   - token
   - pathauto
   - xmlsitemap
+  - ds
+  - ds_ui
   - google_tag
   - google_analytics
   - metatag
@@ -76,7 +78,6 @@ dependencies:
   - context
   - context_ui
   - panelizer
-  - panelizer_quickedit
 themes:
   - bartik
   - seven
