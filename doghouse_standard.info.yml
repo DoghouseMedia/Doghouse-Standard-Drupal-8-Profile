@@ -14,7 +14,6 @@ dependencies:
   - config
   - comment
   - contextual
-  - contact
   - menu_link_content
   - datetime
   - block_content
@@ -51,7 +50,7 @@ dependencies:
   - pathauto
   - xmlsitemap
   - ds
-  - ds_ui
+  - ds_extras
   - google_tag
   - google_analytics
   - metatag
