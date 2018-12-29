@@ -39,6 +39,8 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+  - media
+  - responsive_image
 # contrib
   - admin_toolbar
   - admin_toolbar_tools
@@ -55,6 +57,7 @@ dependencies:
   - google_tag
   - google_analytics
   - metatag
+  - config_ignore
   - config_readonly
   - redirect
   - panels
@@ -71,9 +74,10 @@ dependencies:
   - entity_browser
   - media_entity_browser
   - inline_entity_form
+  - entity_browser
+  - entity_browser_entity_form
   - embed
   - entity_embed
-  - media
   - field_group
   - context
   - context_ui

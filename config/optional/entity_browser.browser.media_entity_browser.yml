@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.media_entity_browser
   module:
     - views
 name: media_entity_browser
@@ -26,7 +24,7 @@ widgets:
   6586703a-6976-4124-8a49-cbb07ceaa3b1:
     settings:
       view: media_entity_browser
-      view_display: all
+      view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
     uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1

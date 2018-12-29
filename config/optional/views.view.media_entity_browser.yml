@@ -1,13 +1,6 @@
 langcode: und
 status: true
 dependencies:
-  config:
-    - image.style.media_entity_browser_thumbnail
-    - media.type.audio
-    - media.type.file
-    - media.type.image
-    - media.type.remote_video
-    - media.type.video
   module:
     - entity_browser
     - image
@@ -514,9 +507,9 @@ display:
         - 'url.query_args:sort_order'
         - user.permissions
       tags: {  }
-  all:
+  entity_browser_1:
     display_plugin: entity_browser
-    id: all
+    id: entity_browser_1
     display_title: All
     position: 1
     display_options:

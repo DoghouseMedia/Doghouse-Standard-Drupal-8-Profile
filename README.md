@@ -32,6 +32,25 @@ composer require doghouse/doghouse-standard-profile:dev-"$TEST_BRANCH" && \
 drush site-install doghouse_standard;
 ```
 
+## Adding/Editing configurations
+
+One of the benefits of an install profile is we can tweak the config to our liking. This does get a bit tricky sometimes 
+due to the dependency stack. The best process is to start by copying the `core/profile/config` folder into this profile 
+and then making the required changes.
+
+New changes/configs that are added should go into `config/optional` dir so they only get installed when ready. See 
+[this](https://www.drupal.org/node/2453919) for more detail.
+
+If you add exported configs added to `config/optional` check `dependencies > config` for each as they may prevent other 
+modules installing.
+
+## What configs have been added/updated?
+
+* Greatly improved media entity browser and supporting views
+* Path auto
+* Jumbotron block type
+* Bartik theme disabled, stark enabled in its place which is a much better starting point for a starter theme
+
 ## What's installed by default?
 
 Drupal standard profile is installed first, then the following modules are enabled.
@@ -112,8 +131,3 @@ Drupal standard profile is installed first, then the following modules are enabl
   - context
   - context_ui
   - panelizer
-  
-## Extras via config
-
-  - Logging errors is set to all
-  - Css and JavaScript aggregation is turned off
