@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.jumbotron
+    - field.field.block_content.jumbotron.body
+    - field.field.block_content.jumbotron.field_media
+    - image.style.large
+  module:
+    - media
+    - text
+id: block_content.jumbotron.default
+targetEntityType: block_content
+bundle: jumbotron
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media:
+    type: media_thumbnail
+    weight: 1
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - views
+name: image_entity_browser
+label: 'Image Entity Browser'
+display: iframe
+display_configuration:
+  width: '1070'
+  height: '840'
+  link_text: 'Select image'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+    settings:
+      view: media_entity_browser
+      view_display: images
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
+    weight: 1
+    label: Library
+    id: view
+  5dff0e1e-d535-4f51-ae5d-dd7997ed23ca:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://media-library/images'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 5dff0e1e-d535-4f51-ae5d-dd7997ed23ca
+    weight: 2
+    label: Upload
+    id: media_image_upload
