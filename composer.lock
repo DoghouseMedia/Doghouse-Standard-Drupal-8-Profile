@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af95e9c52559d758c713fa2a4e0b6d29",
+    "content-hash": "bb5793eabde12cdeafec3401264f1559",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1888,6 +1888,59 @@
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
+            }
+        },
+        {
+            "name": "drupal/custom_markup_block",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/custom_markup_block",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_markup_block-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "0d1e87884f7f6cc627f2e552fb41d1c8cae69200"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1513986185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Graham",
+                    "homepage": "https://www.drupal.org/user/459856",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Custom Markup Block",
+            "homepage": "https://github.com/jez500/Custom-Markup-Block",
+            "keywords": [
+                "blocks",
+                "drupal",
+                "php"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_markup_block"
             }
         },
         {

@@ -26,6 +26,7 @@
         "drupal/config_update": "1.*",
         "drupal/context": "4.*",
         "drupal/core": "8.6.*",
+        "drupal/custom_markup_block": "1.*",
         "drupal/dropzonejs": "2.*",
         "drupal/ds": "3.*",
         "drupal/entity": "1.*",

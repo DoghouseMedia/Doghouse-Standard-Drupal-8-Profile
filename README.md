@@ -131,3 +131,4 @@ Drupal standard profile is installed first, then the following modules are enabl
   - context
   - context_ui
   - panelizer
+  - custom_markup_block
