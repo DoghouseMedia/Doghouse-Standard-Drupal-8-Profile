@@ -81,6 +81,7 @@ dependencies:
   - context
   - context_ui
   - panelizer
+  - custom_markup_block
 themes:
   - stark
   - seven

@@ -42,6 +42,7 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
@@ -49,12 +50,12 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "a.button.button--primary|Button Primary\r\na.button.button--secondary|Button Secondary\r\n"
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: 1000
+    height: 1000
