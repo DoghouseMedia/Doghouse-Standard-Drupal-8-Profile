@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ignore
+label: ignore
+description: ''
+folder: ../config/split/ignore
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
