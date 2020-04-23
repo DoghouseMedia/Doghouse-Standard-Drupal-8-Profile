@@ -79,7 +79,7 @@
                 "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
             },
             "drupal/page_manager": {
-                "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-10.patch"
+                "Add body class": "https://www.drupal.org/files/issues/add-custom-classes-2846878-20.patch"
             },
             "drupal/panels": {
                 "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/2849867-custom_attributes_in_panels_blocks-11.patch"
