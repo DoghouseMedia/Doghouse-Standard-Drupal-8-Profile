@@ -12,10 +12,63 @@ composer config repositories.doghouse composer http://packages.doghouse.agency/
 
 Install with composer:
 ```
-composer require doghouse/doghouse-standard-profile:8.6.x
+composer require doghouse/doghouse-standard-profile:8.9.x
 ```
 
 ## How to test/update this profile
+
+### Update drupal core version
+
+Assuming you want to just bump to a new version of drupal core, cd to this dir, checkout a 
+new branch eg `git checkout -b 8.9.x`, remove `composer.lock` with `rm composer.lock` and run 
+`composer update drupal/core --with-dependencies` adding version number if applicable eg `8.9.*`. 
+Then remove folders it created (you only want the updated `composer.json` and `composer.lock`).
+
+### If branch is local
+
+Define test project folder and install a fresh version of Drupal. Do not run the below in this folder,
+Do this in your sites folder, eg ~/sites as it will create a new drupal install
+[More info](https://medium.com/@DarkGhostHunter/composer-using-your-own-local-package-2b252670d429)
+
+```
+PROJ_NAME="d8test" && \
+composer create-project drupal-composer/drupal-project:8.x-dev "$PROJ_NAME" --stability dev --no-interaction && \
+cd "$PROJ_NAME" && \
+mv web docroot && \
+sed -i -e 's/web\//docroot\//g' composer.json && \
+composer config bin-dir bin && \
+composer config secure-http false && \
+composer config extra.enable-patching true && \
+composer dump-autoload; 
+```
+
+Edit `composer.json` and add a local repository pointing to local version of this profile.
+Update the url to be the dir that this readme lives in.
+
+```
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type" : "path",
+            "url" : "/path-to/Doghouse-Standard-Drupal-8-Profile"
+        }
+    ],
+
+```
+
+Finally, test by installing DSP and Drupal DB.
+
+```
+composer require doghouse/doghouse-standard-profile && \
+drush site-install doghouse_standard;
+```
+
+### If branch is pushed remotely
+
+Ideally this should be done once local testing is done.
 
 ```
 PROJ_NAME="d8test" && TEST_BRANCH="MY-TEST-BRANCH" && \
