@@ -39,7 +39,7 @@
         "drupal/inline_entity_form": "1.*",
         "drupal/media_entity_browser": "2.*",
         "drupal/metatag": "1.*",
-        "drupal/page_manager": "4.0-beta5",
+        "drupal/page_manager": "4.0-beta6",
         "drupal/panelizer": "4.*",
         "drupal/panels": "4.*",
         "drupal/paragraphs": "1.*",
@@ -79,7 +79,7 @@
                 "Fix call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2845037-4.patch"
             },
             "drupal/page_manager": {
-                "Add body class": "https://www.drupal.org/files/issues/2020-04-23/add-custom-classes-2846878-20.patch"
+                "Add body class": "https://www.drupal.org/files/issues/2020-11-23/add-custom-classes-2846878-23.patch"
             },
             "drupal/panels": {
                 "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/2849867-custom_attributes_in_panels_blocks-11.patch"
