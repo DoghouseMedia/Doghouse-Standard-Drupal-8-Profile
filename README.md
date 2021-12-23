@@ -12,7 +12,7 @@ composer config repositories.doghouse composer http://packages.doghouse.agency/
 
 Install with composer:
 ```
-composer require doghouse/doghouse-standard-profile:8.9.x
+composer require doghouse/doghouse-standard-profile:9.1.x
 ```
 
 ## How to test/update this profile
