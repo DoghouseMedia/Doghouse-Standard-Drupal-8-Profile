@@ -1,11 +1,11 @@
 {
-    "name": "doghouse/doghouse-standard-profile",
+    "name": "posttechguy/doghouse-standard-profile",
     "description": "Doghouse standard profile",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "Doghouse Agency",
+            "name": "Doghouse Agency, Bevan Holman",
             "role": "Developer"
         }
     ],
@@ -13,19 +13,23 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/posttechguy/Doghouse-Standard-Drupal-Profile"
         }
     ],
     "require": {
         "composer/installers": "1.*",
         "cweagans/composer-patches": "1.*",
-        "drupal/admin_toolbar": "2.*",
+        "drupal/admin_toolbar": "3.*",
         "drupal/config_ignore": "2.*",
         "drupal/config_readonly": "1.*",
         "drupal/config_split": "1.*",
         "drupal/config_update": "1.*",
         "drupal/context": "4.*",
-        "drupal/core": "^9.1",
-        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core": "^9.4",
+        "drupal/core-composer-scaffold": "^9.4",
         "drupal/custom_markup_block": "1.*",
         "drupal/dropzonejs": "2.*",
         "drupal/ds": "3.*",
