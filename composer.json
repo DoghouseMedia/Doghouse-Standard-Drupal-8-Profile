@@ -23,7 +23,7 @@
         "drupal/config_readonly": "1.*",
         "drupal/config_split": "1.*",
         "drupal/config_update": "1.*",
-        "drupal/context": "4.*",
+        "drupal/context": "^4.1",
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/custom_markup_block": "1.*",
@@ -83,6 +83,9 @@
             },
             "drupal/panels": {
                 "Custom attributes in panels blocks": "https://www.drupal.org/files/issues/2849867-custom_attributes_in_panels_blocks-11.patch"
+            },
+            "drupal/context": {
+                "Fix undefined custom id issue": "https://www.drupal.org/files/issues/2022-05-02/context-ignore-empty-id-mr-25.patch.txt"
             }
         },
         "enable-patching": true
