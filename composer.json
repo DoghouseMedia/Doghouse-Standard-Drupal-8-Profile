@@ -24,8 +24,8 @@
         "drupal/config_split": "1.*",
         "drupal/config_update": "1.*",
         "drupal/context": "4.*",
-        "drupal/core": "8.9.*",
-        "drupal/core-composer-scaffold": "8.*",
+        "drupal/core": "^9.5",
+        "drupal/core-composer-scaffold": "^9.5",
         "drupal/custom_markup_block": "1.*",
         "drupal/dropzonejs": "2.*",
         "drupal/ds": "3.*",
@@ -34,11 +34,11 @@
         "drupal/entity_embed": "1.*",
         "drupal/features": "3.*",
         "drupal/field_group": "3.*",
-        "drupal/google_analytics": "2.*",
-        "drupal/google_tag": "1.*",
+        "drupal/google_analytics": "^4.0",
+        "drupal/google_tag": "^2.0",
         "drupal/inline_entity_form": "1.*",
         "drupal/media_entity_browser": "2.*",
-        "drupal/metatag": "1.*",
+        "drupal/metatag": "^2.0",
         "drupal/page_manager": "4.0-beta6",
         "drupal/panelizer": "4.*",
         "drupal/panels": "4.*",
@@ -46,16 +46,16 @@
         "drupal/pathauto": "1.*",
         "drupal/rabbit_hole": "1.*",
         "drupal/redirect": "1.*",
-        "drupal/styleguide": "1.*",
+        "drupal/styleguide": "^2.1",
         "drupal/token": "1.*",
         "drupal/video_embed_field": "2.*",
-        "drupal/views_block_filter_block": "1.*",
-        "drupal/webform": "5.*",
+        "drupal/views_block_filter_block": "^2.0",
+        "drupal/webform": "^6.1",
         "drupal/xmlsitemap": "1.*"
     },
     "require-dev": {
-        "drupal/browsersync": "~1.0@beta",
-        "drupal/devel": "~1.2"
+        "drupal/browsersync": "^3.0@beta",
+        "drupal/devel": "^5.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -63,7 +63,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "process-timeout": 0,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "extra": {
         "installer-paths": {
