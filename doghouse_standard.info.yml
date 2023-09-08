@@ -1,6 +1,6 @@
 name: Doghouse Standard
 type: profile
-core: 8.x
+core_version_requirement: '^8.8 || ^9 || ^10'
 
 # Required modules.
 dependencies:
