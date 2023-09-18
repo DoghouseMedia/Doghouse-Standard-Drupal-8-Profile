@@ -19,8 +19,6 @@
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "1.*",
         "drupal/admin_toolbar": "3.*",
-        "drupal/ckeditor": "1.*",
-        "drupal/color": "1.*",
         "drupal/config_ignore": "2.*",
         "drupal/config_readonly": "1.*",
         "drupal/config_split": "1.*",
