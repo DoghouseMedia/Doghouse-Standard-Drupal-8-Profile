@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_tools
-theme: stark
+    - olivero
+id: olivero_tools
+theme: olivero
 region: sidebar_first
 weight: 0
 provider: null

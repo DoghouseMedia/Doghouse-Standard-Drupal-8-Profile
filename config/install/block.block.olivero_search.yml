@@ -4,9 +4,9 @@ dependencies:
   module:
     - search
   theme:
-    - stark
-id: stark_search
-theme: stark
+    - olivero
+id: olivero_search
+theme: olivero
 region: sidebar_first
 weight: -1
 provider: null
