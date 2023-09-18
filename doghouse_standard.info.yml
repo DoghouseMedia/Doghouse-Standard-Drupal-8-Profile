@@ -84,4 +84,4 @@ dependencies:
   - custom_markup_block
 themes:
   - stark
-  - seven
+  - claro
