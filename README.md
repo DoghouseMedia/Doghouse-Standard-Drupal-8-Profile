@@ -1,187 +1,75 @@
-# Doghouse Standard Profile
+<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-Doghouse Standard Profile is a Drupal 8 distribution that contains common contrib modules and settings used by 
-Doghouse Agency for Drupal 8 projects.
+Drupal is an open source content management platform supporting a variety of
+websites ranging from personal weblogs to large community-driven websites. For
+more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
+the [Drupal community][Drupal community].
 
-## How to install
+## Contributing
 
-Ensure you have the Doghouse packages repo:
-```
-composer config repositories.doghouse composer http://packages.doghouse.agency/
-```
+Drupal is developed on [Drupal.org][Drupal.org], the home of the international
+Drupal community since 2001!
 
-Install with composer:
-```
-composer require doghouse/doghouse-standard-profile:8.9.x
-```
+[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
+its [issue queue][issue queue], and its [documentation][documentation]. Before
+you start working on code, be sure to search the [issue queue][issue queue] and
+create an issue if your aren't able to find an existing issue.
 
-## How to test/update this profile
+Every issue on Drupal.org automatically creates a new community-accessible fork
+that you can contribute to. Learn more about the code contribution process on
+the [Issue forks & merge requests page][issue forks].
 
-### Update drupal core version
+## Usage
 
-Assuming you want to just bump to a new version of drupal core, cd to this dir, checkout a 
-new branch eg `git checkout -b 8.9.x`, remove `composer.lock` with `rm composer.lock` and run 
-`composer update drupal/core --with-dependencies` adding version number if applicable eg `8.9.*`. 
-Then remove folders it created (you only want the updated `composer.json` and `composer.lock`).
+For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
+guides, API references, and more by visiting Drupal's [documentation
+page][documentation].
 
-### If branch is local
+You can quickly extend Drupal's core feature set by installing any of its
+[thousands of free and open source modules][modules]. With Drupal and its
+module ecosystem, you can often build most or all of what your project needs
+before writing a single line of code.
 
-Define test project folder and install a fresh version of Drupal. Do not run the below in this folder,
-Do this in your sites folder, eg ~/sites as it will create a new drupal install
-[More info](https://medium.com/@DarkGhostHunter/composer-using-your-own-local-package-2b252670d429)
+## Changelog
 
-```
-PROJ_NAME="d8test" && \
-composer create-project drupal-composer/drupal-project:8.x-dev "$PROJ_NAME" --stability dev --no-interaction && \
-cd "$PROJ_NAME" && \
-mv web docroot && \
-sed -i -e 's/web\//docroot\//g' composer.json && \
-composer config bin-dir bin && \
-composer config secure-http false && \
-composer config extra.enable-patching true && \
-composer dump-autoload; 
-```
+Drupal keeps detailed [change records][changelog]. You can search Drupal's
+changes for a record of every notable breaking change and new feature since
+2011.
 
-Edit `composer.json` and add a local repository pointing to local version of this profile.
-Update the url to be the dir that this readme lives in.
+## Security
 
-```
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type" : "path",
-            "url" : "/path-to/Doghouse-Standard-Drupal-8-Profile"
-        }
-    ],
+For a list of security announcements, see the [Security advisories
+page][Security advisories] (available as [an RSS feed][security RSS]). This
+page also describes how to subscribe to these announcements via email.
 
-```
+For information about the Drupal security process, or to find out how to report
+a potential security issue to the Drupal security team, see the [Security team
+page][security team].
 
-Finally, test by installing DSP and Drupal DB.
+## Need a helping hand?
 
-```
-composer require doghouse/doghouse-standard-profile && \
-drush site-install doghouse_standard;
-```
+Visit the [Support page][support] or browse [over a thousand Drupal
+providers][service providers] offering design, strategy, development, and
+hosting services.
 
-### If branch is pushed remotely
+## Legal matters
 
-Ideally this should be done once local testing is done.
+Know your rights when using Drupal by reading Drupal core's
+[license](/core/LICENSE.txt).
 
-```
-PROJ_NAME="d8test" && TEST_BRANCH="MY-TEST-BRANCH" && \
-composer create-project drupal-composer/drupal-project:8.x-dev "$PROJ_NAME" --stability dev --no-interaction && \
-cd "$PROJ_NAME" && \
-mv web docroot && \
-sed -i -e 's/web\//docroot\//g' composer.json && \
-composer config repositories.doghouse composer http://packages.doghouse.agency/ && \
-composer config bin-dir bin && \
-composer config secure-http false && \
-composer config extra.enable-patching true && \
-composer dump-autoload && \
-composer require doghouse/doghouse-standard-profile:dev-"$TEST_BRANCH" && \
-drush site-install doghouse_standard;
-```
+Learn about the [Drupal trademark and logo policy here][trademark].
 
-## Adding/Editing configurations
-
-One of the benefits of an install profile is we can tweak the config to our liking. This does get a bit tricky sometimes 
-due to the dependency stack. The best process is to start by copying the `core/profile/config` folder into this profile 
-and then making the required changes.
-
-New changes/configs that are added should go into `config/optional` dir so they only get installed when ready. See 
-[this](https://www.drupal.org/node/2453919) for more detail.
-
-If you add exported configs added to `config/optional` check `dependencies > config` for each as they may prevent other 
-modules installing.
-
-## What configs have been added/updated?
-
-* Greatly improved media entity browser and supporting views
-* Path auto
-* Jumbotron block type
-* Bartik theme disabled, stark enabled in its place which is a much better starting point for a starter theme
-
-## What's installed by default?
-
-Drupal standard profile is installed first, then the following modules are enabled.
-
-### Core
-
-  - node
-  - history
-  - block
-  - breakpoint
-  - ckeditor
-  - color
-  - config
-  - comment
-  - contextual
-  - menu_link_content
-  - datetime
-  - block_content
-  - quickedit
-  - editor
-  - help
-  - image
-  - menu_ui
-  - options
-  - path
-  - page_cache
-  - dynamic_page_cache
-  - taxonomy
-  - dblog
-  - search
-  - shortcut
-  - toolbar
-  - field_ui
-  - file
-  - rdf
-  - views
-  - views_ui
-  - tour
-  - automated_cron
-
-### Contrib
-
- - admin_toolbar
-  - admin_toolbar_tools
-  - ctools
-  - config_filter
-  - config_split
-  - webform
-  - webform_ui
-  - token
-  - pathauto
-  - xmlsitemap
-  - ds
-  - ds_extras
-  - google_tag
-  - google_analytics
-  - metatag
-  - config_readonly
-  - redirect
-  - panels
-  - panels_ipe
-  - entity_reference_revisions
-  - paragraphs
-  - page_manager
-  - page_manager_ui
-  - config_update
-  - features
-  - features_ui
-  - dropzonejs
-  - entity
-  - entity_browser
-  - media_entity_browser
-  - inline_entity_form
-  - embed
-  - entity_embed
-  - media
-  - field_group
-  - context
-  - context_ui
-  - panelizer
-  - custom_markup_block
+[Drupal.org]: https://www.drupal.org
+[Drupal community]: https://www.drupal.org/community
+[GitLab repository]: https://git.drupalcode.org/project/drupal
+[issue queue]: https://www.drupal.org/project/issues/drupal
+[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
+[documentation]: https://www.drupal.org/documentation
+[changelog]: https://www.drupal.org/list-changes/drupal
+[modules]: https://www.drupal.org/project/project_module
+[security advisories]: https://www.drupal.org/security
+[security RSS]: https://www.drupal.org/security/rss.xml
+[security team]: https://www.drupal.org/drupal-security-team
+[service providers]: https://www.drupal.org/drupal-services
+[support]: https://www.drupal.org/support
+[trademark]: https://www.drupal.com/trademark
