@@ -16,7 +16,6 @@ dependencies:
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - help
   - image

@@ -44,7 +44,6 @@
         "drupal/panels": "4.*",
         "drupal/paragraphs": "1.*",
         "drupal/pathauto": "1.*",
-        "drupal/quickedit": "1.*",
         "drupal/rabbit_hole": "1.*",
         "drupal/rdf": "2.*",
         "drupal/redirect": "1.*",
