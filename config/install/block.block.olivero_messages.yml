@@ -4,16 +4,16 @@ dependencies:
   module:
     - system
   theme:
-    - seven
-id: seven_content
-theme: seven
-region: content
+    - olivero
+id: olivero_messages
+theme: olivero
+region: highlighted
 weight: 0
 provider: null
-plugin: system_main_block
+plugin: system_messages_block
 settings:
-  id: system_main_block
-  label: 'Main page content'
+  id: system_messages_block
+  label: 'Status messages'
   provider: system
   label_display: '0'
 visibility: {  }

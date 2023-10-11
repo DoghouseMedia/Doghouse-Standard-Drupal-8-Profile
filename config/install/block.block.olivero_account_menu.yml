@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_account_menu
-theme: stark
+    - olivero
+id: olivero_account_menu
+theme: olivero
 region: secondary_menu
 weight: 0
 provider: null

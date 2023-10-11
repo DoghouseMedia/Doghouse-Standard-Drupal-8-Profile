@@ -1,7 +1,7 @@
 # Doghouse Standard Profile
 
-Doghouse Standard Profile is a Drupal 8 distribution that contains common contrib modules and settings used by 
-Doghouse Agency for Drupal 8 projects.
+Doghouse Standard Profile is a Drupal distribution that contains common contrib modules and settings used by
+Doghouse Agency for Drupal 8|9|10 projects.
 
 ## How to install
 
@@ -19,9 +19,9 @@ composer require doghouse/doghouse-standard-profile:8.9.x
 
 ### Update drupal core version
 
-Assuming you want to just bump to a new version of drupal core, cd to this dir, checkout a 
-new branch eg `git checkout -b 8.9.x`, remove `composer.lock` with `rm composer.lock` and run 
-`composer update drupal/core --with-dependencies` adding version number if applicable eg `8.9.*`. 
+Assuming you want to just bump to a new version of drupal core, cd to this dir, checkout a
+new branch eg `git checkout -b 8.9.x`, remove `composer.lock` with `rm composer.lock` and run
+`composer update drupal/core --with-dependencies` adding version number if applicable eg `8.9.*`.
 Then remove folders it created (you only want the updated `composer.json` and `composer.lock`).
 
 ### If branch is local
@@ -87,14 +87,14 @@ drush site-install doghouse_standard;
 
 ## Adding/Editing configurations
 
-One of the benefits of an install profile is we can tweak the config to our liking. This does get a bit tricky sometimes 
-due to the dependency stack. The best process is to start by copying the `core/profile/config` folder into this profile 
+One of the benefits of an install profile is we can tweak the config to our liking. This does get a bit tricky sometimes
+due to the dependency stack. The best process is to start by copying the `core/profile/config` folder into this profile
 and then making the required changes.
 
-New changes/configs that are added should go into `config/optional` dir so they only get installed when ready. See 
+New changes/configs that are added should go into `config/optional` dir so they only get installed when ready. See
 [this](https://www.drupal.org/node/2453919) for more detail.
 
-If you add exported configs added to `config/optional` check `dependencies > config` for each as they may prevent other 
+If you add exported configs added to `config/optional` check `dependencies > config` for each as they may prevent other
 modules installing.
 
 ## What configs have been added/updated?
@@ -110,78 +110,76 @@ Drupal standard profile is installed first, then the following modules are enabl
 
 ### Core
 
-  - node
-  - history
-  - block
-  - breakpoint
-  - ckeditor
-  - color
-  - config
-  - comment
-  - contextual
-  - menu_link_content
-  - datetime
-  - block_content
-  - quickedit
-  - editor
-  - help
-  - image
-  - menu_ui
-  - options
-  - path
-  - page_cache
-  - dynamic_page_cache
-  - taxonomy
-  - dblog
-  - search
-  - shortcut
-  - toolbar
-  - field_ui
-  - file
-  - rdf
-  - views
-  - views_ui
-  - tour
-  - automated_cron
+- node
+- history
+- block
+- breakpoint
+- ckeditor5
+- config
+- comment
+- contextual
+- menu_link_content
+- datetime
+- block_content
+- editor
+- help
+- image
+- menu_ui
+- options
+- path
+- page_cache
+- dynamic_page_cache
+- taxonomy
+- dblog
+- search
+- shortcut
+- toolbar
+- field_ui
+- file
+- rdf
+- views
+- views_ui
+- tour
+- automated_cron
 
 ### Contrib
 
- - admin_toolbar
-  - admin_toolbar_tools
-  - ctools
-  - config_filter
-  - config_split
-  - webform
-  - webform_ui
-  - token
-  - pathauto
-  - xmlsitemap
-  - ds
-  - ds_extras
-  - google_tag
-  - google_analytics
-  - metatag
-  - config_readonly
-  - redirect
-  - panels
-  - panels_ipe
-  - entity_reference_revisions
-  - paragraphs
-  - page_manager
-  - page_manager_ui
-  - config_update
-  - features
-  - features_ui
-  - dropzonejs
-  - entity
-  - entity_browser
-  - media_entity_browser
-  - inline_entity_form
-  - embed
-  - entity_embed
-  - media
-  - field_group
-  - context
-  - context_ui
-  - panelizer
-  - custom_markup_block
+- admin_toolbar
+- admin_toolbar_tools
+- ctools
+- config_filter
+- config_split
+- webform
+- webform_ui
+- token
+- pathauto
+- xmlsitemap
+- ds
+- ds_extras
+- google_tag
+- google_analytics
+- metatag
+- config_readonly
+- redirect
+- panels
+- panels_ipe
+- entity_reference_revisions
+- paragraphs
+- page_manager
+- page_manager_ui
+- config_update
+- features
+- features_ui
+- dropzonejs
+- entity
+- entity_browser
+- media_entity_browser
+- inline_entity_form
+- embed
+- entity_embed
+- media
+- field_group
+- context
+- context_ui
+- panelizer
+- custom_markup_block

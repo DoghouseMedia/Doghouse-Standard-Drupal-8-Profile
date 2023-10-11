@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_branding
-theme: stark
+    - olivero
+id: olivero_branding
+theme: olivero
 region: header
 weight: 0
 provider: null

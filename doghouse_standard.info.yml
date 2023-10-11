@@ -1,6 +1,6 @@
 name: Doghouse Standard
 type: profile
-core: 8.x
+core_version_requirement: '^8.8 || ^9 || ^10'
 
 # Required modules.
 dependencies:
@@ -9,15 +9,13 @@ dependencies:
   - history
   - block
   - breakpoint
-  - ckeditor
-  - color
+  - ckeditor5
   - config
   - contextual
   - contact
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - help
   - image
@@ -83,5 +81,5 @@ dependencies:
   - panelizer
   - custom_markup_block
 themes:
-  - stark
-  - seven
+  - olivero
+  - claro
