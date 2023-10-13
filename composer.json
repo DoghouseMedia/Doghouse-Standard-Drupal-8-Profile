@@ -24,7 +24,7 @@
         "drupal/config_split": "1.*",
         "drupal/config_update": "2.*",
         "drupal/context": "5.*",
-        "drupal/core": "^10.1",
+        "drupal/core": "^10.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/custom_markup_block": "1.*",
         "drupal/dropzonejs": "2.*",
