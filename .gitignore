@@ -17,3 +17,7 @@
 /robots.txt
 /update.php
 /web.config
+modules/
+profiles/
+sites/
+themes/
