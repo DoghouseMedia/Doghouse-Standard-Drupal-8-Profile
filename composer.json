@@ -34,7 +34,6 @@
         "drupal/entity_embed": "1.*",
         "drupal/features": "3.*",
         "drupal/field_group": "3.*",
-        "drupal/google_analytics": "4.*",
         "drupal/google_tag": "2.*",
         "drupal/inline_entity_form": "1.*",
         "drupal/media_entity_browser": "2.*",
