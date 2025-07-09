@@ -54,7 +54,6 @@ dependencies:
   - ds
   - ds_extras
   - google_tag
-  - google_analytics
   - metatag
   - config_ignore
   - config_readonly
