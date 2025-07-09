@@ -49,7 +49,6 @@ dependencies:
   - pathauto
   - xmlsitemap
   - google_tag
-  - google_analytics
   - metatag
   - config_readonly
   - redirect
