@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - stark
-id: stark_help
-theme: stark
+    - olivero
+id: olivero_help
+theme: olivero
 region: help
 weight: -6
 provider: null

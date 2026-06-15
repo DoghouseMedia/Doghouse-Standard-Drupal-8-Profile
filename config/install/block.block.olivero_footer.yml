@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_footer
-theme: stark
+    - olivero
+id: olivero_footer
+theme: olivero
 region: footer
 weight: -6
 provider: null
